@@ -1,0 +1,20 @@
+{
+  "name": "buildmind.ai",
+  "version": "1.0.0",
+  "description": "## Overview BuildMind.ai is an advanced AI-powered development platform that revolutionizes application creation through intelligent automation and no-code solutions. Our platform enables businesses and developers to build, deploy, and scale applications efficiently.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hritikgupta7368/BuildMind.ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hritikgupta7368/BuildMind.ai/issues"
+  },
+  "homepage": "https://github.com/hritikgupta7368/BuildMind.ai#readme"
+}

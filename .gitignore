@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Next.js
+/apps/web/.next/
+/apps/web/out/
+/apps/web/build/
+/apps/web/.vercel
+
+# NestJS
+/apps/gateway/dist/
+/apps/gateway/node_modules/
+
+# Python
+/apps/processor/venv/
+/apps/processor/__pycache__/
+/apps/processor/**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.venv
+env/
+venv/
+ENV/
+*.egg-info/
+*.egg
+
+# Rust
+/apps/engine/target/
+/apps/engine/Cargo.lock
+**/*.rs.bk
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+
+# Debug lo

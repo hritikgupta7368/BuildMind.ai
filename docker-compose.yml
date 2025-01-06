@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: infrastructure/docker/development/web.Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./apps/web:/app
+      - /app/node_modules
+
+  gateway:
+    build:
+      context: .
+      dockerfile: infrastructure/docker/development/gateway.Dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./apps/gateway:/app
+      - /app/node_modules
+
+  processor:
+    build:
+      context: .
+      dockerfile: infrastructure/docker/development/processor.Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./apps/processor:/app
+
+  engine:
+    build:
+      context: .
+      dockerfile: infrastructure/docker/development/engine.Dockerfile
+    ports:
+      - "8080:8080"
