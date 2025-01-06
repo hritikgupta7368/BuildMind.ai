@@ -9,6 +9,6 @@ async fn main() {
         .route("/", get(|| async { "Rust Service Running" }));
 
     let listener = tokio::net::TcpListener::bind("0.0.0.0:8080").await.unwrap();
-    println!("Rust service listening on port 8080");
+    println!("Rust service listening on PORT 8080");
     axum::serve(listener, app).await.unwrap();
 }
